@@ -5,6 +5,7 @@ const Subtotal = ({item}) => {
   const [price, setPrice] = useState(0);
   useEffect(()=>{
     totalAmount();
+    // eslint-disable-next-line
   },[item]);
 
   const totalAmount = ()=>{

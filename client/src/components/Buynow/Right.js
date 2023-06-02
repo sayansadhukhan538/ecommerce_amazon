@@ -4,14 +4,15 @@ const Right = ({item}) => {
   const [price, setPrice] = useState(0);
   useEffect(()=>{
     totalAmount();
+    // eslint-disable-next-line
   },[item]);
 
   const totalAmount = ()=>{
     let price = 0;
-    item.map((i)=>{
-      price += i.price.cost;
+    item.map(i=>
+      price += i.price.cost
       
-    })
+  )
     setPrice(price);
   }
   return (

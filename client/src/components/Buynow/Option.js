@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { LoginContext } from '../context/ContextProvider';
 const Option = ({deleteData, get}) => {
 
-  const {account, setAccount} = useContext(LoginContext);
+  const { setAccount} = useContext(LoginContext);
   const removeData = async(req ,res)=>{
     try {
       const res = await fetch(`/remove/${deleteData}`,{
